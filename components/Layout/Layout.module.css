@@ -1,0 +1,6 @@
+.container{
+  max-width: 1440;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}

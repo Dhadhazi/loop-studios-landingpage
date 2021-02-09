@@ -1,10 +1,9 @@
-import { NavBar } from "../components/NavBar/NavBar";
+import { Layout } from "../components/Layout/Layout";
 
 export default function Home() {
   return (
     <div>
-      <NavBar />
-      Yellow world
+      <Layout>Yellow world</Layout>
     </div>
   );
 }
