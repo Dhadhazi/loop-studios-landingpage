@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  width: clamp(900px, 1080px, 1120px);
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+}
+
+.companyLogo {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: "Alata", sans-serif;
+}
+
+.menubar {
+  ul {
+    display: flex;
+    gap: 10px;
+    li {
+      list-style-type: none;
+    }
+  }
+}
