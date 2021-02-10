@@ -1,6 +1,14 @@
+import { InfoCard } from "../components/InfoCard/InfoCard";
 import { Layout } from "../components/Layout/Layout";
 import { NavBar } from "../components/NavBar/NavBar";
 import s from "../styles/Home.module.scss";
+
+const DATA_INFOCARD = {
+  title: "The leader in interactive VR",
+  desciption:
+    "Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.",
+  image: "image-interactive.jpg",
+};
 
 export default function Home() {
   return (
@@ -15,7 +23,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      Yellow world
+      <div className={s.contentContainer}>
+        <InfoCard
+          title={DATA_INFOCARD.title}
+          image={DATA_INFOCARD.image}
+          description={DATA_INFOCARD.desciption}
+        />
+        Apple sause
+      </div>
     </Layout>
   );
 }

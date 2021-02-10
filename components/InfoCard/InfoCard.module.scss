@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.container {
+  width: 100%;
+  margin: 160px 0px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 2;
+  width: 550px;
+  height: 320px;
+  background-color: $color-white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-left: 100px;
+  header {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  article {
+    color: $color-darkgrey;
+    font-family: $font-alata;
+    line-height: 1.5rem;
+  }
+}
