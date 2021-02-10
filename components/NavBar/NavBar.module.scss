@@ -2,7 +2,8 @@
 
 .container {
   display: flex;
-  width: clamp(900px, 1080px, 1120px);
+  width: 80vw;
+  max-width: 1220px;
   justify-content: space-between;
   align-items: center;
   color: $color-white;
