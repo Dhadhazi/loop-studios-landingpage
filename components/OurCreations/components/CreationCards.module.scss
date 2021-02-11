@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.container {
+  position: relative;
+}
+.image {
+  position: relative;
+  z-index: 1;
+  filter: brightness(75%);
+}
+.titleContainer {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 256px;
+  padding-left: 30px;
+
+  h3 {
+    color: $color-white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+}

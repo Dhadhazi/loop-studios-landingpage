@@ -8,9 +8,11 @@ type Props = {
 
 export const CreationCards = ({ title, image }: Props) => {
   return (
-    <div>
-      <img src={`desktop/${image}`} />
-      <div>{title}</div>
+    <div className={s.container}>
+      <img src={`desktop/${image}`} className={s.image} />
+      <div className={s.titleContainer}>
+        <h3>{title}</h3>
+      </div>
     </div>
   );
 };
