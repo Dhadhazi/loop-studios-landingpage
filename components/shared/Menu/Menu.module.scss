@@ -1,5 +1,7 @@
 @import "../../../styles/variables";
 
+$thetransition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+
 .menubar {
   margin-right: 15px;
   ul {
@@ -9,6 +11,29 @@
     li {
       list-style-type: none;
       font-family: $font-alata;
+      a {
+        text-decoration: none;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 2px;
+          bottom: -0.5rem;
+          left: 25%;
+          background-color: $color-white;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: $thetransition;
+          transition: $thetransition;
+        }
+        &:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
     }
   }
 }

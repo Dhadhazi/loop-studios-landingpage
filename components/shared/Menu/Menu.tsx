@@ -8,7 +8,9 @@ export const Menu = () => {
     <div className={s.menubar}>
       <ul>
         {MenuElements.map((menu) => (
-          <li key={menu}>{menu}</li>
+          <li key={menu}>
+            <a href="#">{menu}</a>
+          </li>
         ))}
       </ul>
     </div>
