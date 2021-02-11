@@ -2,6 +2,7 @@
 
 .container {
   position: relative;
+  cursor: pointer;
 }
 .image {
   position: relative;
@@ -11,12 +12,20 @@
 .titleContainer {
   z-index: 2;
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 256px;
+  height: 450px;
   padding-left: 30px;
+  display: flex;
+  align-items: flex-end;
+  color: $color-white;
+
+  &:hover {
+    color: $color-black;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 
   h3 {
-    color: $color-white;
     font-size: 2.5rem;
     text-transform: uppercase;
   }
