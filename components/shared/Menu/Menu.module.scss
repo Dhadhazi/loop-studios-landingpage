@@ -1,10 +1,14 @@
+@import "../../../styles/variables";
+
 .menubar {
   margin-right: 15px;
   ul {
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    padding-inline-start: 0;
     li {
       list-style-type: none;
+      font-family: $font-alata;
     }
   }
 }

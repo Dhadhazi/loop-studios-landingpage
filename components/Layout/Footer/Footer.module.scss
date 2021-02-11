@@ -19,9 +19,16 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 40px 0;
 }
 
 .logoMenuContainer {
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-family: $font-alata;
+  }
 }
 
 .socialContainer {
