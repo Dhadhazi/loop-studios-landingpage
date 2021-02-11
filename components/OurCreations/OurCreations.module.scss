@@ -19,6 +19,11 @@
     padding: 0.5rem 2.5rem;
     font-family: $font-alata;
     letter-spacing: 0.3rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
   }
 }
 
