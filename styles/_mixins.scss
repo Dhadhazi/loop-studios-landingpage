@@ -1,0 +1,7 @@
+@mixin container-center-content() {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10rem;
+  max-width: 1440px;
+  min-width: 900px;
+}

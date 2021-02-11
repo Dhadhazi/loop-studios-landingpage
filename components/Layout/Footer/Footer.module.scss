@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.container {
+  background-color: $color-black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.postitionerContainer {
+  @include container-center-content;
+  width: 100%;
+  flex-direction: column;
+}
+
+.contentContainer {
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logoMenuContainer {
+}
+
+.socialContainer {
+}

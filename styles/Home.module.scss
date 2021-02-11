@@ -1,11 +1,8 @@
 @import "./variables";
+@import "./mixins";
 
 .headerContainer {
-  display: flex;
-  justify-content: center;
-  padding: 0px 10rem;
-  max-width: 1440px;
-  min-width: 900px;
+  @include container-center-content;
   height: 650px;
   background-image: url("/desktop/image-hero.jpg");
 }
@@ -20,12 +17,8 @@
 }
 
 .contentContainer {
-  display: flex;
-  justify-content: center;
+  @include container-center-content;
   flex-direction: column;
-  padding: 0px 10rem;
-  max-width: 1440px;
-  min-width: 900px;
 }
 
 .slogan {
