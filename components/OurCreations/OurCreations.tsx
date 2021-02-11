@@ -44,7 +44,7 @@ export const OurCreations = () => {
         <header>OUR CREATIONS</header>
         <button>SEE ALL</button>
       </div>
-      <div>
+      <div className={s.cardsContainer}>
         {DATA_CARDS.map((data) => (
           <CreationCards title={data.title} image={data.image} />
         ))}

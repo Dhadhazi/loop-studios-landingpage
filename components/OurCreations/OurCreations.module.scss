@@ -2,6 +2,7 @@
 
 .container {
   margin: 100px 0px;
+  display: grid;
 }
 
 .titleContainer {
@@ -19,4 +20,12 @@
     font-family: $font-alata;
     letter-spacing: 0.3rem;
   }
+}
+
+.cardsContainer {
+  margin-top: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
