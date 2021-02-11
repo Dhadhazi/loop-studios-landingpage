@@ -46,7 +46,11 @@ export const OurCreations = () => {
       </div>
       <div className={s.cardsContainer}>
         {DATA_CARDS.map((data) => (
-          <CreationCards title={data.title} image={data.image} />
+          <CreationCards
+            title={data.title}
+            image={data.image}
+            key={data.title}
+          />
         ))}
       </div>
     </div>
