@@ -12,7 +12,12 @@ export const Footer = () => {
             <Menu />
           </div>
           <div className={s.socialContainer}>
-            <div>SOCIAL ICONS</div>
+            <div>
+              <i className="fab fa-facebook-square" />
+              <i className="fab fa-twitter" />
+              <i className="fab fa-pinterest" />
+              <i className="fab fa-instagram" />
+            </div>
             <p>© 2021 Loopstudios. All rights reserved.</p>
           </div>
         </div>

@@ -23,6 +23,9 @@
 }
 
 .logoMenuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   h2 {
     margin: 0;
     padding: 0;
@@ -32,4 +35,17 @@
 }
 
 .socialContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  i {
+    padding-top: 13px;
+    transform: scale(1.8);
+    margin: 0 13px;
+  }
+  p {
+    color: $color-verydarkgrey;
+    font-family: $font-alata;
+  }
 }
