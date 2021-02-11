@@ -25,12 +25,12 @@ export default function Home() {
         </div>
       </div>
       <div className={s.contentContainer}>
+        <OurCreations />
         <InfoCard
           title={DATA_INFOCARD.title}
           image={DATA_INFOCARD.image}
           description={DATA_INFOCARD.desciption}
         />
-        <OurCreations />
       </div>
     </Layout>
   );
