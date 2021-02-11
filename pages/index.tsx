@@ -1,6 +1,7 @@
 import { InfoCard } from "../components/InfoCard/InfoCard";
 import { Layout } from "../components/Layout/Layout";
 import { NavBar } from "../components/NavBar/NavBar";
+import { OurCreations } from "../components/OurCreations/OurCreations";
 import s from "../styles/Home.module.scss";
 
 const DATA_INFOCARD = {
@@ -29,7 +30,7 @@ export default function Home() {
           image={DATA_INFOCARD.image}
           description={DATA_INFOCARD.desciption}
         />
-        Apple sause
+        <OurCreations />
       </div>
     </Layout>
   );
