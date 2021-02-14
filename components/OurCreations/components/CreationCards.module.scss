@@ -3,11 +3,17 @@
 .container {
   position: relative;
   cursor: pointer;
+  @media (max-width: 850px) {
+    width: 90vw;
+  }
 }
 .image {
   position: relative;
   z-index: 1;
   filter: brightness(75%);
+  @media (max-width: 850px) {
+    width: 100%;
+  }
 }
 .titleContainer {
   z-index: 2;
@@ -28,5 +34,12 @@
   h3 {
     font-size: 2.5rem;
     text-transform: uppercase;
+  }
+  @media (max-width: 850px) {
+    height: 100%;
+    width: 100%;
+    h3 {
+      width: 40%;
+    }
   }
 }

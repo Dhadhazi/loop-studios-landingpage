@@ -7,9 +7,15 @@ type Props = {
 };
 
 export const CreationCards = ({ title, image }: Props) => {
+  const [version, setVersion] = React.useState("desktop");
+
+  React.useLayoutEffect(() => {
+    setVersion(window.innerWidth <= 850 ? "mobile" : "desktop");
+  }, []);
+
   return (
     <div className={s.container}>
-      <img src={`desktop/${image}`} className={s.image} />
+      <img src={`${version}/${image}`} className={s.image} />
       <div className={s.titleContainer}>
         <h3>{title}</h3>
       </div>
