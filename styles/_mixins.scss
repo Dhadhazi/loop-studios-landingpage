@@ -4,6 +4,10 @@
   padding: 0px 10rem;
   max-width: 1440px;
   min-width: 900px;
+  @media (max-width: 850px) {
+    min-width: 0px;
+    padding: 0rem;
+  }
 }
 
 @mixin link-underliner() {
