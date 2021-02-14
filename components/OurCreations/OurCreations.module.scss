@@ -2,18 +2,10 @@
 
 .container {
   margin: 100px 0px;
-  display: grid;
-}
 
-.titleContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  header {
-    font-size: 4rem;
-  }
   button {
     outline: none;
+    border: 2px solid $color-black;
     background-color: $color-white;
     font-size: 1rem;
     padding: 0.5rem 2.5rem;
@@ -27,6 +19,26 @@
   }
 }
 
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  header {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 850px) {
+    justify-content: center;
+    flex-direction: column;
+    header {
+      font-size: 3rem;
+    }
+    button {
+      display: none;
+    }
+  }
+}
+
 .cardsContainer {
   margin-top: 50px;
   display: inline-flex;
@@ -36,5 +48,18 @@
   @media (max-width: 850px) {
     justify-content: center;
     gap: 10px;
+  }
+}
+
+.mobileSeeAllButton {
+  display: none;
+  @media (max-width: 850px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    button {
+      font-size: 1.5rem;
+      padding: 1rem 4rem;
+    }
   }
 }

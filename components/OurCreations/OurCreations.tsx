@@ -53,6 +53,9 @@ export const OurCreations = () => {
           />
         ))}
       </div>
+      <div className={s.mobileSeeAllButton}>
+        <button>SEE ALL</button>
+      </div>
     </div>
   );
 };
