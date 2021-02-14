@@ -1,8 +1,6 @@
 import React from "react";
-import { Menu } from "../shared/Menu/Menu";
 import s from "./NavBar.module.scss";
-
-const MenuElements = ["About", "Careers", "Events", "Products", "Support"];
+import { MenuElements } from "../../CONTENT";
 
 export const NavBar = () => {
   return (
