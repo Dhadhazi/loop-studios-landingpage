@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .container {
   display: flex;
@@ -14,4 +15,28 @@
   font-weight: 300;
   font-family: "Alata", sans-serif;
   margin-left: 10px;
+}
+
+.menubar {
+  margin-right: 15px;
+  ul {
+    display: flex;
+    gap: 30px;
+    padding-inline-start: 0;
+    li {
+      list-style-type: none;
+      font-family: $font-alata;
+      a {
+        @include link-underliner;
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5rem;
+      margin: 3rem 0;
+    }
+  }
 }
