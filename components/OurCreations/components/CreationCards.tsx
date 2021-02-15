@@ -14,8 +14,6 @@ export const CreationCards = ({ title, image }: Props) => {
     let before = text.lastIndexOf(" ", middle);
     let after = text.indexOf(" ", middle + 1);
 
-    console.log(middle, before, after);
-
     if (middle - before < after - middle || after === -1) {
       middle = before;
     } else {
@@ -28,9 +26,7 @@ export const CreationCards = ({ title, image }: Props) => {
     return [firstHalf, secondHalf];
   }
 
-  console.log(splitStringHalfByWord("The Grid"));
-
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     setVersion(window.innerWidth <= 850 ? "mobile" : "desktop");
   }, []);
 

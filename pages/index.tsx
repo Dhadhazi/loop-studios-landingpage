@@ -10,7 +10,7 @@ export default function Home() {
     <Layout>
       <div className={s.headerContainer}>
         <div className={s.headerContent}>
-          {/* <NavBar /> */}
+          <NavBar />
           <div className={s.slogan}>
             IMMERSIVE <br />
             EXPERIENCES <br />
