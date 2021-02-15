@@ -2,14 +2,14 @@ import React from "react";
 import s from "./CreationCards.module.scss";
 
 type Props = {
-  title: String;
-  image: String;
+  title: string;
+  image: string;
 };
 
 export const CreationCards = ({ title, image }: Props) => {
   const [version, setVersion] = React.useState("desktop");
 
-  function splitStringHalfByWord(text: String): String[] {
+  function splitStringHalfByWord(text: string): string[] {
     let middle = Math.floor(text.length / 2);
     let before = text.lastIndexOf(" ", middle);
     let after = text.indexOf(" ", middle + 1);
@@ -34,7 +34,7 @@ export const CreationCards = ({ title, image }: Props) => {
 
   return (
     <div className={s.container}>
-      <img src={`${version}/${image}`} className={s.image} />
+      <img src={`${version}/${image}`} className={s.image} alt={title} />
       <div className={s.titleContainer}>
         <h3>
           {titleInArray[0]}
