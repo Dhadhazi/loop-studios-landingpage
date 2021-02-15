@@ -29,9 +29,16 @@
     font-weight: 300;
   }
   @media (max-width: 850px) {
+    justify-content: flex-start;
+    gap: 25vh;
     .slogan {
-      padding: 1rem;
-      font-size: auto;
+      width: 80vw;
+      word-spacing: 70vw;
+      font-size: 4rem;
+      padding: 2rem;
+      @media (max-width: 500px) {
+        font-size: 3rem;
+      }
     }
   }
 }
