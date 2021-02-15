@@ -1,10 +1,10 @@
-import React, { ReactChildren } from "react";
+import React, { ReactChildren, ReactNode } from "react";
 import Head from "next/head";
 import s from "./Layout.module.css";
 import { Footer } from "./Footer/Footer";
 
 type Props = {
-  children: ReactChildren;
+  children: ReactNode;
 };
 
 export const Layout = ({ children }: Props) => {
