@@ -31,12 +31,16 @@
       }
     }
   }
-  @media (max-width: 850px) {
-    ul {
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.5rem;
-      margin: 3rem 0;
-    }
+}
+
+.mobileContainer {
+  color: $color-white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .companyLogo {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
   }
 }
