@@ -43,4 +43,38 @@
     font-size: 3.5rem;
     margin-bottom: 20px;
   }
+  .mobileMenubar {
+    cursor: pointer;
+  }
+  .overlayBackground {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    .overlayLogoAndClose {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5vw;
+      padding-right: 10vw;
+    }
+    .overlayMenubar {
+      margin-right: 15px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        margin-top: 20vw;
+        gap: 30px;
+        padding-inline-start: 0;
+        font-size: 3rem;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
 }
