@@ -8,24 +8,26 @@ import s from "../styles/Home.module.scss";
 export default function Home() {
   return (
     <Layout>
-      <div className={s.headerContainer}>
-        <div className={s.headerContent}>
-          <NavBar />
-          <div className={s.slogan}>
-            IMMERSIVE <br />
-            EXPERIENCES <br />
-            THAT DELIVER
+      <>
+        <div className={s.headerContainer}>
+          <div className={s.headerContent}>
+            <NavBar />
+            <div className={s.slogan}>
+              IMMERSIVE <br />
+              EXPERIENCES <br />
+              THAT DELIVER
+            </div>
           </div>
         </div>
-      </div>
-      <div className={s.contentContainer}>
-        <InfoCard
-          title={DATA_INFOCARD.title}
-          image={DATA_INFOCARD.image}
-          description={DATA_INFOCARD.desciption}
-        />
-        <OurCreations />
-      </div>
+        <div className={s.contentContainer}>
+          <InfoCard
+            title={DATA_INFOCARD.title}
+            image={DATA_INFOCARD.image}
+            description={DATA_INFOCARD.desciption}
+          />
+          <OurCreations />
+        </div>
+      </>
     </Layout>
   );
 }
